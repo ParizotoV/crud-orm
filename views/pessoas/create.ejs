@@ -1,0 +1,19 @@
+<%- include ('../partials/header') %>
+  <h1>Nova pessoa</h1>
+  <p><a href="/pessoas">Voltar para a lista de pessoas</a></p>
+  <form method="POST">
+    <div class="form-group">
+      <label for="name">Nome</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome" />
+    </div>
+    <div class="form-group">
+      <label for="birth">Nascimento</label>
+      <input type="text" class="form-control" id="birth" name="birth" placeholder="Digite sua data de nascimento" />
+    </div>
+    <div class="form-group">
+      <label for="office">Cargo</label>
+      <input type="text" class="form-control" id="office" name="office" placeholder="Digite seu cargo" />
+    </div>
+    <button type="submit" class="btn btn-default">Salvar</button>
+  </form>
+<%- include ('../partials/footer') %>
